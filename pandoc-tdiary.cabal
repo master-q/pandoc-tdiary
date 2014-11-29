@@ -1,0 +1,28 @@
+-- documentation, see http://haskell.org/cabal/users-guide/
+
+name:                pandoc-tdiary
+version:             0.1.0.0
+synopsis:            Conversion of tDiary data to Pandoc document.
+description:         Conversion of tDiary data to Pandoc document.
+homepage:            https://github.com/master-q/pandoc-tdiary
+license:             GPL-2
+license-file:        LICENSE
+author:              Kiwamu Okabe
+maintainer:          kiwamu@debian.or.jp
+copyright:           (c) 2014 Kiwamu Okabe
+category:            Text
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+source-repository head
+    type:     git
+    location: https://github.com/master-q/pandoc-tdiary.git
+
+library
+  exposed-modules:     Text.Pandoc.Readers.Tdiary
+  -- other-modules:
+  build-depends:
+      base >=4.6 && <4.7,
+      pandoc
+  hs-source-dirs:      src
+  default-language:    Haskell2010
